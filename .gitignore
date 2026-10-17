@@ -1,0 +1,9 @@
+node_modules/
+dist/
+coverage/
+*.log
+*.tar.gz
+.DS_Store
+history.json
+.env
+.env.*

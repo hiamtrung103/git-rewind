@@ -1,0 +1,17 @@
+{
+  "name": "git-rewind",
+  "version": "1.0.0",
+  "description": "Your repository, in motion. A local-first Git history player.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test",
+    "export": "node bin/git-rewind.mjs",
+    "demo": "node scripts/make-demo.mjs"
+  }
+}
