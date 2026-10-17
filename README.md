@@ -5,6 +5,13 @@
 
 ![Git Rewind repository player](docs/preview.jpg)
 
+<details>
+<summary>Prefer a little daylight? See the light theme.</summary>
+
+![Git Rewind light theme](docs/preview-light.jpg)
+
+</details>
+
 Git Rewind turns committed Git history into a playable timeline. Watch the file tree evolve, jump between snapshots, and explore the patches that made a project what it is. Start with the included 18-commit demo, or bring your own repository.
 
 ## Start in 10 seconds
@@ -53,6 +60,7 @@ node bin/git-rewind.mjs ../my-app --limit 50 --name my-app --out history.json
 - **See what changed.** Filter the landscape to changed files and inspect additions, modifications, renames and deletions.
 - **Read the patch.** Syntax-free, line-oriented unified diffs with added/removed lines and copy controls.
 - **Take history with you.** Import and download a versioned JSON export.
+- **Make yourself comfortable.** Switch between light and dark themes with the sun/moon button. The first visit follows your system appearance; your choice is remembered locally, with the right theme applied before the first paint.
 - **Use your keyboard.** `Space` to play/pause, `←` / `→` to step, `Home` / `End` to jump, `/` to search, `?` for help. Standard controls retain their native keyboard behavior when focused.
 
 The interface adapts to mobile, tablet and desktop, respects reduced motion, and includes accessible labels and native dialogs.

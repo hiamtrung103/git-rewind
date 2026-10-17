@@ -7,6 +7,29 @@ const state = { data: null, index: 0, playing: false, timer: null, speed: 1, loo
 const labels = { A: 'Added', M: 'Modified', D: 'Deleted', R: 'Renamed', C: 'Copied', T: 'Type changed', U: 'Unmerged', X: 'Changed', B: 'Changed' };
 let toastTimer;
 function toast(message) { $('toast').textContent = message; $('toast').classList.add('visible'); clearTimeout(toastTimer); toastTimer = setTimeout(() => $('toast').classList.remove('visible'), 2700); }
+function applyTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  const label = theme === 'light' ? 'Switch to dark theme' : 'Switch to light theme';
+  $('theme-button').setAttribute('aria-label', label);
+  $('theme-button').title = label;
+  $('theme-icon').innerHTML = theme === 'light'
+    ? '<path d="M16.8 11.5a7 7 0 0 1-8.3-8.3 7 7 0 1 0 8.3 8.3Z"/>'
+    : '<circle cx="10" cy="10" r="3.5"/><path d="M10 1.5v1.4m0 14.2v1.4M1.5 10h1.4m14.2 0h1.4M4 4l1 1m10 10 1 1M4 16l1-1M15 5l1-1"/>';
+  document.querySelector('meta[name="theme-color"]').content = theme === 'light' ? '#f5f7f2' : '#101311';
+}
+applyTheme(document.documentElement.dataset.theme === 'light' ? 'light' : 'dark');
+$('theme-button').addEventListener('click', () => {
+  const theme = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+  applyTheme(theme);
+  try { localStorage.setItem('git-rewind-theme', theme); } catch { /* Keep the session preference when storage is unavailable. */ }
+});
+matchMedia('(prefers-color-scheme: light)').addEventListener('change', event => {
+  try { if (['light', 'dark'].includes(localStorage.getItem('git-rewind-theme'))) return; } catch { return; }
+  applyTheme(event.matches ? 'light' : 'dark');
+});
+window.addEventListener('storage', event => {
+  if (event.key === 'git-rewind-theme') applyTheme(['light', 'dark'].includes(event.newValue) ? event.newValue : matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+});
 async function copy(text, message = 'Copied to clipboard') {
   try { await navigator.clipboard.writeText(text); toast(message); } catch { toast('Clipboard unavailable. Select and copy the text manually.'); }
 }

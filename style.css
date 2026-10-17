@@ -5,6 +5,102 @@
 @media(max-width:1180px){main{padding:0 26px}.topbar{padding:0 26px}.topbar-center{display:none}.workspace-grid{grid-template-columns:190px minmax(0,1fr) 235px}.commit-pane{padding:20px 15px 0}.stage-content{padding:23px 18px 18px}.snapshot-stats>div{padding:0 17px}.snapshot-orbit{display:none}.landscape-legend .legend-hint{display:none}.keyboard-button{display:none}.playback-date{display:none}.timeline-key{font-size:7px}.stage-toolbar{padding:0 18px}.view-tabs{gap:15px}}
 @media(max-width:960px){.workspace-grid{grid-template-columns:170px minmax(0,1fr)}.commit-pane{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;column-gap:25px;border-left:0;border-top:1px solid var(--border);padding:18px 22px}.commit-pane .pane-heading,.commit-pane .commit-tag,.commit-pane h2,.commit-pane .author-row,.commit-pane .hash-button{grid-column:1}.commit-pane .pane-heading{grid-row:1}.commit-tag{margin-top:15px}.commit-pane h2{font-size:17px;margin:9px 0 14px;max-height:none}.hash-button{margin-top:12px}.commit-pane .change-summary{grid-column:2;grid-row:1/3;margin-top:0}.changes-heading{grid-column:2;grid-row:3;align-self:start;margin-top:6px}.changed-files{grid-column:2;grid-row:4/6;max-height:100px}.commit-bottom{display:none}.repo-toolbar-right .mono{font-size:8px}.intro-side{display:none}.timeline-key{display:none}.playback-info #playback-date,.playback-separator{display:none}.file-tree{height:326px}.stage-content{min-height:423px}.landscape{grid-template-columns:repeat(3,minmax(0,1fr))}.playback{padding:0 18px;gap:8px}.transport{gap:3px}.speed-label>span{display:none}}
 @media(max-width:620px){.topbar{height:67px;padding:0 18px;gap:10px}.brand{font-size:20px}.brand-mark{width:29px;height:28px;font-size:12px;margin-right:8px}.beta{display:none}.topbar-actions{gap:10px}.topbar-divider,#help-button{display:none}.button-light{padding:9px 11px;font-size:10px}.button-light>span{font-size:15px}main{padding:0 14px}.intro{padding:28px 3px 24px}.intro .eyebrow{font-size:7px;letter-spacing:1px}h1{font-size:30px;letter-spacing:-1.4px;max-width:330px;margin-top:12px}.intro p{font-size:10px}.repo-toolbar{height:50px;padding:0 13px}.repo-identity{gap:7px}.repo-identity strong{font-size:11px;max-width:120px}.branch-chip{font-size:8px;max-width:85px;padding:3px 6px}.demo-badge{font-size:6px;padding-left:7px;letter-spacing:.6px}.repo-toolbar-right .mono{display:none}.repo-toolbar-right{gap:0}.repo-toolbar-right>.icon-button{width:23px}.workspace-grid{display:flex;flex-direction:column}.file-pane{display:none}.stage-toolbar{height:46px;padding:0 17px}.stage-content{padding:23px 17px 19px;min-height:410px}.snapshot-heading h2{font-size:24px}.snapshot-heading p{font-size:10px;max-width:300px}.snapshot-stats{padding:19px 0;margin-bottom:18px}.snapshot-stats>div{padding:0 20px}.snapshot-stats strong{font-size:20px}.snapshot-stats span{font-size:8px}.landscape{grid-template-columns:repeat(3,minmax(0,1fr));max-height:173px;gap:5px}.file-card{padding:10px 8px 8px;gap:8px}.card-name{font-size:8px}.card-path{font-size:7px}.card-status{font-size:6px}.card-top .file-icon{font-size:8px}.landscape-legend{font-size:7px;gap:12px}.commit-pane{display:block;padding:18px}.commit-pane .pane-heading{font-size:8px}.commit-pane .commit-tag{margin-top:17px}.commit-pane h2{margin:10px 0 14px;font-size:20px}.commit-pane .author-row{float:left;width:65%;padding-top:3px}.commit-pane .hash-button{width:32%;margin:5px 0 0 auto}.change-summary{clear:both;padding-top:18px;margin-top:0}.commit-pane .changes-heading{margin-top:18px}.changed-files{max-height:100px}.changed-file{font-size:9px;padding:8px 0}.diff-view{height:410px}.diff-file-toolbar{padding:0 12px}.diff-code{font-size:9px}.diff-line{padding:0 8px}.line-no{margin-right:9px;min-width:22px}.timeline-heading{padding:19px 17px 0}.timeline-heading>div:first-child{gap:10px}.timeline-range{font-size:7px}.timeline-track{margin:0 17px;height:86px}.timeline-bars{gap:2px}.timeline-commit{padding:0 2px;min-width:4px}.timeline-commit .bar{max-width:8px}.timeline-tooltip{font-size:7px;max-width:120px}.scrubber-row{padding:0 16px 14px;gap:10px;font-size:7px}.playback{height:97px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:0;padding:10px 15px;position:relative}.playback-info{width:100%;justify-content:center;font-size:8px;margin-bottom:8px}.playback-options{gap:4px;position:absolute;right:12px;bottom:12px}.transport{margin:0 auto;gap:6px;transform:translateX(-18px)}.transport .icon-button{width:26px}.play-button{width:35px;height:35px}.playback-options #loop-button{display:none}.speed-label select{font-size:8px;width:44px;padding:4px 1px}.playback-options .speed-label{font-size:8px}footer{flex-direction:column;align-items:flex-start;gap:8px;padding:18px 3px 25px;font-size:9px}footer>span:last-child{font-size:8px}footer .text-button{font-size:8px}.footer-dot{margin:0 6px}.modal{padding:28px 22px}.modal h2{font-size:25px}.modal-foot{align-items:flex-start}.modal-foot>span{max-width:170px}}
+.theme-button{border:1px solid var(--border);width:32px;height:32px}.theme-button svg{width:17px;height:17px}
+
+/* A warm paper palette. Semantic change colors stay distinct in both themes. */
+:root[data-theme=light]{color-scheme:light;--bg:#f5f7f2;--panel:#fff;--panel2:#edf2e8;--border:#d6ddcf;--text:#263023;--muted:#59684f;--subtle:#6a785f;--lime:#4d7417;--red:#b24635;--amber:#886319}
+:root[data-theme=light] kbd{background:#edf2e7;border-color:#cbd6bf;color:#56674a}
+:root[data-theme=light] .brand-light{color:#68765e}
+:root[data-theme=light] .brand-mark,:root[data-theme=light] .play-button,:root[data-theme=light] .button-lime{background:#c4eb88;color:#26371a}
+:root[data-theme=light] .icon-button:hover{background:#e6eedb;color:#354c24}
+:root[data-theme=light] #help-button{border-color:#acba9e}
+:root[data-theme=light] .button-light{background:#263b1e;color:#f2f8e9;border-color:#263b1e}
+:root[data-theme=light] .local-badge{color:#586b49}
+:root[data-theme=light] .workbench{border-color:#c4cfb8;box-shadow:0 16px 50px #354c2410}
+:root[data-theme=light] .repo-toolbar{background:#edf2e7}
+:root[data-theme=light] .branch-chip{border-color:#c4cfb8;color:#4a6138}
+:root[data-theme=light] .demo-badge{color:#60754e;border-color:#c4cfb8}
+:root[data-theme=light] .count-pill{background:#e9f0df;color:#50683c}
+:root[data-theme=light] .search-box{background:#f7f9f3;border-color:#ccd6c1}
+:root[data-theme=light] .search-box input::placeholder{color:#758369}
+:root[data-theme=light] .tree-row{color:#4f6143}
+:root[data-theme=light] .tree-row:hover{background:#f0f5e8}
+:root[data-theme=light] .tree-row.selected{background:#e3edce;color:#365a0e}
+:root[data-theme=light] .tree-chevron,:root[data-theme=light] .folder-icon{color:#6b7d5b}
+:root[data-theme=light] .file-icon{color:#5a6e4b}
+:root[data-theme=light] .file-icon.ts{color:#2e6884}
+:root[data-theme=light] .file-icon.tsx{color:#286e61}
+:root[data-theme=light] .file-icon.css{color:#795494}
+:root[data-theme=light] .file-icon.json{color:#876417}
+:root[data-theme=light] .file-icon.md{color:#496c85}
+:root[data-theme=light] .stage-pane{background:radial-gradient(ellipse at 80% 0,#e7efdc66,transparent 70%),#fff}
+:root[data-theme=light] .snapshot-heading .eyebrow{color:#61764d}
+:root[data-theme=light] .snapshot-orbit{border-color:#b9cba4}
+:root[data-theme=light] .snapshot-orbit:before{border-color:#bdcea8}
+:root[data-theme=light] .toggle-label input{background:#e1e8d8;border-color:#becbad}
+:root[data-theme=light] .toggle-label input:after{background:#8c9d7c}
+:root[data-theme=light] .toggle-label input:checked{background:#719846;border-color:#63893b}
+:root[data-theme=light] .toggle-label input:checked:after{background:#f5faef}
+:root[data-theme=light] .file-card{background:#f7f9f3;border-color:#d6dfcb}
+:root[data-theme=light] .file-card:hover{background:#edf4e1;border-color:#92aa73}
+:root[data-theme=light] .file-card[data-status=A]{background:#e9f3da;border-color:#b5cd90}
+:root[data-theme=light] .file-card[data-status=M],:root[data-theme=light] .file-card[data-status=R]{background:#faf2dc;border-color:#ddc88f}
+:root[data-theme=light] .file-card[data-status=D]{background:#fbece6;border-color:#deb5a8}
+:root[data-theme=light] .card-name{color:#314129}
+:root[data-theme=light] .card-path,:root[data-theme=light] .card-status{color:#627451}
+:root[data-theme=light] .file-card[data-status=A] .card-status{color:var(--lime)}
+:root[data-theme=light] .file-card[data-status=M] .card-status,:root[data-theme=light] .file-card[data-status=R] .card-status{color:var(--amber)}
+:root[data-theme=light] .file-card[data-status=D] .card-status{color:var(--red)}
+:root[data-theme=light] .file-tree,:root[data-theme=light] .landscape,:root[data-theme=light] .changed-files,:root[data-theme=light] .diff-code{scrollbar-color:#b4c49f transparent}
+:root[data-theme=light] .unchanged{background:#95a586}
+:root[data-theme=light] .commit-tag{color:#657a51}
+:root[data-theme=light] .commit-type{background:#eef5e4;border-color:#c6d8af;color:#4b6a2b}
+:root[data-theme=light] .avatar{background:#e8f1da;border-color:#bed0a5;color:#48672c}
+:root[data-theme=light] .hash-button{background:#f5f8ef;border-color:#d0dcc2;color:#597444}
+:root[data-theme=light] .hash-button:hover{border-color:#839e65}
+:root[data-theme=light] .copy-icon{color:#718463}
+:root[data-theme=light] .change-summary>div:first-child{color:#5d6e50}
+:root[data-theme=light] .change-bar i{background:#e5ecdc}
+:root[data-theme=light] .change-bar i.plus{background:#739d43}
+:root[data-theme=light] .change-bar i.minus{background:#cc806b}
+:root[data-theme=light] .changed-file{color:#506744}
+:root[data-theme=light] .changed-file:hover{color:#365914}
+:root[data-theme=light] .commit-bottom,:root[data-theme=light] .commit-bottom>span{color:#687f51}
+:root[data-theme=light] .diff-file-toolbar>span{color:#49623a}
+:root[data-theme=light] .diff-meta{border-color:#e0e8d7}
+:root[data-theme=light] .diff-line.add{background:#eaf3df;color:#3d6329}
+:root[data-theme=light] .diff-line.remove{background:#faeae3;color:#934b3b}
+:root[data-theme=light] .diff-line.hunk{background:#edf3f4;color:#46717c}
+:root[data-theme=light] .diff-line.header{color:#687e57}
+:root[data-theme=light] .line-no{color:#7e8e72}
+:root[data-theme=light] .timeline-panel{background:#edf2e7;border-color:#c4cfb8}
+:root[data-theme=light] .timeline-heading .eyebrow{color:#4e633d}
+:root[data-theme=light] .timeline-line{background:#c7d3ba}
+:root[data-theme=light] .timeline-baseline{background:#c5d3b7}
+:root[data-theme=light] .timeline-commit{color:#8aa667}
+:root[data-theme=light] .timeline-commit:before{background:#9db87a80}
+:root[data-theme=light] .timeline-commit.future{color:#c4d2b5}
+:root[data-theme=light] .timeline-commit:hover,:root[data-theme=light] .timeline-commit.current{color:#557d26}
+:root[data-theme=light] .timeline-commit .timeline-node{background:#8aa667;box-shadow:0 0 0 4px #edf2e7}
+:root[data-theme=light] .timeline-commit.future .timeline-node{background:#c0d0b0}
+:root[data-theme=light] .timeline-commit.current .timeline-node{background:#557d26;box-shadow:0 0 0 4px #dce9c9,0 0 0 5px #9bb97a}
+:root[data-theme=light] .timeline-tooltip{background:#476c21;color:#f8fbf1}
+:root[data-theme=light] .scrubber-row input{background:#c4d3b4}
+:root[data-theme=light] .playback{border-color:#c9d6bd}
+:root[data-theme=light] .playback-separator{color:#96a486}
+:root[data-theme=light] .transport .icon-button{color:#68824e}
+:root[data-theme=light] .transport .icon-button:hover{color:#365b13}
+:root[data-theme=light] .speed-label select{background:#f7faf2;color:#4d663b;border-color:#c3d1b5}
+:root[data-theme=light] .keyboard-button{border-color:#c9d6bd}
+:root[data-theme=light] .icon-button[aria-pressed=true]{background:#dcebc8;color:#476c21}
+:root[data-theme=light] .modal{background:#fcfdf9;border-color:#bdcdaa;box-shadow:0 30px 120px #263b1e30}
+:root[data-theme=light] .modal::backdrop{background:#28391dcc}
+:root[data-theme=light] .command{background:#f0f5e8;border-color:#c4d5b0;color:#486534}
+:root[data-theme=light] .modal-foot,:root[data-theme=light] .shortcuts>div{border-color:#d6dfcc}
+:root[data-theme=light] .shortcuts dt{color:#4e653d}
+:root[data-theme=light] .import-error{background:#fff0e8;border-color:#d7a58f;color:#91472d}
+:root[data-theme=light] .toast{background:#e9f3d9;border-color:#9fbf7b;color:#395c20;box-shadow:0 8px 32px #334d1d20}
+:root[data-theme=light] .skip-link{background:#d1e9ab;color:#2e461e}
 .timeline-commit:first-child .timeline-tooltip{left:0;transform:none}.timeline-commit:last-child .timeline-tooltip{left:auto;right:0;transform:none}
 @keyframes file-arrives{from{opacity:.3;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
 .file-card[data-status=A]{animation:file-arrives .3s ease-out both}
